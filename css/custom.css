@@ -1,0 +1,44 @@
+/* ==========================================
+   全新合并代码（确保花括号绝对闭合）
+   ========================================== */
+
+/* 1. 你之前成功修改的表格线样式（我帮你单独列出来） */
+.markdown-body table, 
+table {
+  /* 这里保持你之前改成功的表格线代码，比如：border: 1px solid #ccc; */
+}
+
+/* 2. 直接对准浏览器里显示的 body a 标签进行最高优先级降维打击 */
+html body a, 
+body .markdown-body p a, 
+a {
+  text-decoration: underline !important;
+  /* 强制让下划线颜色等于文字颜色，防止变透明 */
+  text-decoration-color: currentColor !important; 
+  -webkit-text-decoration-color: currentColor !important;
+}
+
+
+html body a, 
+body .markdown-body p a, 
+a {
+  text-decoration: underline !important;
+  text-decoration-color: currentColor !important; 
+  -webkit-text-decoration-color: currentColor !important;
+
+  /* ============ 核心新增：强行关闭浏览器的跳跃断线机制 ============ */
+  text-decoration-skip-ink: none !important;
+  -webkit-text-decoration-skip-ink: none !important;
+}
+html body a, 
+body .markdown-body p a, 
+a {
+  text-decoration: underline !important;
+  text-decoration-color: currentColor !important; 
+  -webkit-text-decoration-color: currentColor !important;
+  text-decoration-skip-ink: none !important;
+  -webkit-text-decoration-skip-ink: none !important;
+
+  /* ============ 核心新增：控制下划线距离文字的距离 ============ */
+  text-underline-offset: 4px !important; /* 4px 为推荐间距，数字越大离字越远 */
+}
