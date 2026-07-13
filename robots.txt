@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+Allow: /construction/
+Allow: /hvac/
+Allow: /hood/
+Allow: /fabrication/
+Allow: /capabilities/
+Allow: /detailing/
+Allow: /painting/
+Allow: /laser/
+Allow: /Gallery/
+Allow: /Roof/
+
+Sitemap: http://alleasypro.ca
